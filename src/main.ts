@@ -1,4 +1,7 @@
 import './style.css';
+import bobImg from './bob.png';
+import patrickImg from './patrick.png';
+import planktonImg from './plankton.png';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 
@@ -13,7 +16,7 @@ function initialize() {
   new google.maps.Marker({
     position: { lat: -34.10132975434756, lng: 18.470068315468517 },
     icon: {
-      url: 'bob.png',
+      url: bobImg,
       scaledSize: new google.maps.Size(100, 139),
     },
     title: 'Sponge Bob',
@@ -25,7 +28,7 @@ function initialize() {
   new google.maps.Marker({
     position: { lat: -34.102542556144535, lng: 18.472086485189532 },
     icon: {
-      url: 'patrick.png',
+      url: patrickImg,
       scaledSize: new google.maps.Size(100, 98),
     },
     title: 'Patrick',
@@ -37,7 +40,7 @@ function initialize() {
   new google.maps.Marker({
     position: { lat: -34.10207946811493, lng: 18.47076922067397 },
     icon: {
-      url: 'plankton.png',
+      url: planktonImg,
       scaledSize: new google.maps.Size(100, 134),
     },
     title: 'Plankton',
